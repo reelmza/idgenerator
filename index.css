@@ -44,9 +44,6 @@ h2 {
 .content {
   bottom: 0;
 }
-.deboss {
-  top: 28%;
-}
 
 /* Pseudo */
 .watermark,
@@ -58,7 +55,7 @@ h2 {
 .watermark {
   background: url("assets/stingy.png") bottom center no-repeat;
   background-size: 35vmin;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 3;
 }
 .bg {
@@ -106,12 +103,15 @@ h2 {
 
 /* Content */
 .deboss {
-  height: 2%;
+  top: 29%;
+}
+.deboss {
+  height: 4%;
   width: 100%;
   box-shadow: inset 0px 0px 3.5px rgb(15, 0, 0);
 }
 .content {
-  height: 70%;
+  height: 68%;
   width: 100%;
 
   display: flex;
