@@ -1,0 +1,258 @@
+html {
+  font-size: 1em;
+  line-height: 0.9;
+}
+
+/* My Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", arial;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin-top: 3vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+}
+.id-card {
+  width: 95vmin;
+  height: 55vmin;
+  background: none;
+
+  position: relative;
+}
+.content,
+.heading,
+.deboss {
+  z-index: 3;
+  position: absolute;
+}
+.content {
+  bottom: 0;
+}
+.deboss {
+  top: 28%;
+}
+
+/* Pseudo */
+.watermark,
+.bg {
+  position: absolute;
+  width: 95vmin;
+  height: 55vmin;
+}
+.watermark {
+  background: url("assets/stingy.png") bottom center no-repeat;
+  background-size: 35vmin;
+  opacity: 0.15;
+  z-index: 5;
+}
+.bg {
+  z-index: 2;
+  background: #fff;
+  background-size: cover;
+}
+.heading {
+  height: 28%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  height: 100%;
+  width: 15.4vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  height: 93%;
+  width: auto;
+}
+.ass {
+  height: 100%;
+  width: 79.6vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+.ass h1 {
+  font-size: 6vmin;
+}
+.ass h6 {
+  font-size: 3.5vmin;
+  margin-top: 1vmin;
+}
+
+/* Content */
+.deboss {
+  height: 2%;
+  width: 100%;
+  box-shadow: inset 0px 0px 3.5px rgb(15, 0, 0);
+}
+.content {
+  height: 70%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.text {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.chip {
+  width: 20%;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 14vmin;
+}
+.chip img {
+  width: 80%;
+  margin-bottom: 1vmin;
+}
+.chip h6 {
+  font-size: 2vmin;
+}
+.details {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.details div {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2vmin;
+}
+.details h3 {
+  font-size: 5vmin;
+  margin: 2vmin;
+  text-align: center;
+  text-decoration: underline;
+}
+.details h4 {
+  font-size: 4vmin;
+}
+.details h6 {
+  font-size: 2.4vmin;
+  margin-left: 1vmin;
+
+  text-transform: uppercase;
+}
+
+/* Barcode and Picture */
+.picture {
+  width: 30%;
+  height: 100%;
+  padding: 1vmin;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail_image {
+  width: 100%;
+  height: 78%;
+  margin-bottom: 2%;
+
+  border-radius: 2vmin;
+  overflow: hidden;
+}
+.detail_image img {
+  max-width: 100%;
+  border-radius: 2vmin;
+}
+.barcode {
+  height: 20%;
+}
+.barcode img {
+  height: 100%;
+}
+
+/* Data fields */
+.data_form {
+  display: flex;
+  flex-direction: column;
+  width: 95vmin;
+  margin-top: 3vmin;
+}
+input,
+select,
+button {
+  height: 9vmin;
+  margin-bottom: 2vmin;
+
+  border: solid 1px #ccc;
+  padding: 0 1vmin;
+  border-radius: 1vmin;
+
+  outline: none;
+  color: #333;
+}
+label {
+  font-size: 4vmin;
+  margin-bottom: 3px;
+}
+button {
+  border: none;
+  background: rgb(206, 206, 206);
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(170, 170, 170);
+}
+#form_image {
+  padding: 0;
+}
+#form_image::-webkit-file-upload-button {
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  background: #ccc;
+  cursor: pointer;
+}
+#form_image::-webkit-file-upload-button:focus {
+  outline: none;
+}
+
+/* Change theme */
+.theme_container {
+  width: 95vmin;
+  padding: 3vmin 0;
+
+  text-align: center;
+}
+#theme {
+  color: #0e3cd1;
+  font-size: 5vmin;
+  cursor: pointer;
+
+  background: none;
+}
