@@ -58,8 +58,8 @@ h2 {
 .watermark {
   background: url("assets/stingy.png") bottom center no-repeat;
   background-size: 35vmin;
-  opacity: 0.15;
-  z-index: 5;
+  opacity: 0.2;
+  z-index: 3;
 }
 .bg {
   z-index: 2;
