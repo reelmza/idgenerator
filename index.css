@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", "Trebuchet MS", arial;
+  font-family: "Ubuntu", "Trebuchet MS", arial;
   font-weight: 300;
   color: #000;
   display: flex;
