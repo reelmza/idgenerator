@@ -66,6 +66,8 @@ h2 {
   background: #fff;
   background-size: cover;
 }
+
+/* Heading & Logo */
 .heading {
   height: 28%;
   width: 100%;
@@ -152,15 +154,18 @@ h2 {
 }
 .details h3 {
   font-size: 5vmin;
+  width: 40vmin;
   margin: 2vmin;
   text-align: center;
-  text-decoration: underline;
+  border-bottom: solid 2px #000;
+
+  align-self: center;
 }
 .details h4 {
   font-size: 4vmin;
 }
 .details h6 {
-  font-size: 2.4vmin;
+  font-size: 3vmin;
   margin-left: 1vmin;
 
   text-transform: uppercase;
@@ -207,18 +212,21 @@ input,
 select,
 button {
   height: 9vmin;
-  margin-bottom: 2vmin;
+  font-size: 3vmin;
+  margin-bottom: 5vmin;
 
   border: solid 1px #ccc;
-  padding: 0 1vmin;
+  padding: 0 3vmin;
   border-radius: 1vmin;
 
   outline: none;
-  color: #333;
+  color: #888;
 }
 label {
   font-size: 4vmin;
   margin-bottom: 3px;
+
+  color: #444;
 }
 button {
   border: none;
@@ -228,14 +236,12 @@ button {
 button:hover {
   background: rgb(170, 170, 170);
 }
-#form_image {
-  padding: 0;
-}
+
 #form_image::-webkit-file-upload-button {
   height: 100%;
   border: none;
   box-shadow: none;
-  background: #ccc;
+  background: none;
   cursor: pointer;
 }
 #form_image::-webkit-file-upload-button:focus {
@@ -245,14 +251,29 @@ button:hover {
 /* Change theme */
 .theme_container {
   width: 95vmin;
-  padding: 3vmin 0;
+  height: 10vmin;
+  margin: 5vmin 0;
 
   text-align: center;
 }
 #theme {
-  color: #0e3cd1;
+  color: #fff;
   font-size: 5vmin;
+  height: 10vmin;
   cursor: pointer;
 
-  background: none;
+  background: #000;
+}
+
+@media only screen and (max-width: 567px) {
+  input,
+  select,
+  button {
+    height: 13vmin;
+    padding: 0 2vmin;
+  }
+
+  label {
+    font-size: 5vmin;
+  }
 }

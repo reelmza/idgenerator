@@ -30,7 +30,6 @@ function update(target) {
         return document.getElementById('detail_motto').innerHTML = "MOTTO: " + formMotto.value
     }
 
-
     if (target === 'image') {
         logoContainer.style.display = null;
         if (formOrgImage.value == 0) {
@@ -38,6 +37,8 @@ function update(target) {
         }
 
         if (formOrgImage.value == 1) {
+            document.getElementById('detail_association').innerHTML = 'LAVISH BOYS ASSOCIATION'
+            document.getElementById('detail_motto').innerHTML = "MOTTO: " + "SEND YOUR AZA"
             return logoImage.setAttribute('src', 'assets/lavish.png')
         }
 
@@ -51,7 +52,7 @@ function update(target) {
 let theme_state = 0
 const themeStyle = document.getElementById('bg')
 
-const themeArray = ['url("assets/bg.jpg")', 'linear-gradient(-145deg, #d4fc79 0%, #96e6a1 100%)', 'linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%)', 'linear-gradient( 135deg, #70F570 10%, #49C628 100%)', 'linear-gradient(135deg, #feb692 10%, #ea5455 100%)']
+const themeArray = ['url("assets/bg.jpg")', 'linear-gradient(135deg, #feb692 10%, #ea5455 100%)', 'linear-gradient(-145deg, #d4fc79 0%, #96e6a1 100%)', 'linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%)', 'linear-gradient( 135deg, #70F570 10%, #49C628 100%)']
 
 document.getElementById('theme').addEventListener('click', function () {
     if (theme_state < 5) {
