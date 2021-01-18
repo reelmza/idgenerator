@@ -10,23 +10,29 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", arial;
-  color: #222;
+  font-family: "Roboto", "Trebuchet MS", arial;
+  font-weight: 300;
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
+  font-weight: 300;
 }
 .main {
   margin-top: 3vmin;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 .id-card {
   width: 95vmin;
@@ -95,6 +101,7 @@ h2 {
 }
 .ass h1 {
   font-size: 6vmin;
+  font-weight: 400;
 }
 .ass h6 {
   font-size: 3.5vmin;
@@ -108,7 +115,7 @@ h2 {
 .deboss {
   height: 4%;
   width: 100%;
-  box-shadow: inset 0px 0px 3.5px rgb(15, 0, 0);
+  box-shadow: inset 0px 0px 2px rgb(15, 0, 0);
 }
 .content {
   height: 68%;
@@ -154,6 +161,7 @@ h2 {
 }
 .details h3 {
   font-size: 5vmin;
+  font-weight: 400;
   width: 40vmin;
   margin: 2vmin;
   text-align: center;
@@ -230,11 +238,13 @@ label {
 }
 button {
   border: none;
-  background: rgb(206, 206, 206);
+  color: #fff;
+  font-size: 5vmin;
+  background: #8c16db;
   cursor: pointer;
 }
 button:hover {
-  background: rgb(170, 170, 170);
+  background: #740fb8;
 }
 
 #form_image::-webkit-file-upload-button {
@@ -251,7 +261,7 @@ button:hover {
 /* Change theme */
 .theme_container {
   width: 95vmin;
-  height: 10vmin;
+  height: 13vmin;
   margin: 5vmin 0;
 
   text-align: center;
@@ -259,7 +269,8 @@ button:hover {
 #theme {
   color: #fff;
   font-size: 5vmin;
-  height: 10vmin;
+  height: 100%;
+  padding: 0 5vmin;
   cursor: pointer;
 
   background: #000;
