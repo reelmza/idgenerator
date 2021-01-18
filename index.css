@@ -109,13 +109,12 @@ h6 {
 }
 
 /* Content */
+
 .deboss {
   top: 29%;
-}
-.deboss {
   height: 4%;
   width: 100%;
-  box-shadow: inset 0px 0px 2px rgb(15, 0, 0);
+  box-shadow: inset 0px 0px 2px #000;
 }
 .content {
   height: 68%;
@@ -171,6 +170,7 @@ h6 {
 }
 .details h4 {
   font-size: 4vmin;
+  font-weight: 400;
 }
 .details h6 {
   font-size: 3vmin;
