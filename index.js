@@ -85,7 +85,7 @@ document.getElementById('save').addEventListener('click', function () {
     document.querySelector('.data_form').style.display = 'none'
 
     //Process & Download Image
-    html2canvas(document.querySelector("#id-card")).then(canvas => {
+    html2canvas(document.querySelector("#id-card"), { scale: 3 }).then(canvas => {
         var a = document.createElement('a');
         a.href = canvas.toDataURL("image/png");
         a.download = 'myfile.png';
